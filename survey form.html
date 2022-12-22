@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>
+        Build a Survey Form using HTML and CSS
+    </title>
+ 
+    <style>
+ 
+        /* Styling the Body element i.e. Color,
+        Font, Alignment */
+        body {
+            background-color: #e9eeec;
+            font-family: Verdana;
+            text-align: center;
+        }
+ 
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #fff;
+            max-width: 100%;
+            margin:  auto;
+            padding: 0;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+ 
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+ 
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+ 
+        /* Styling form-control input,
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: inline;
+            width: 95%;
+        }
+ 
+        /* Styling form-control Radio
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display:inline;
+            width: auto;
+        }
+ 
+        /* Styling Button */
+        button {
+            background-color: #888988;
+            border: 1px solid #777;
+            margin-left: 20%;
+            font-family: inherit;
+            font-size: 21px;
+            display:block;
+            width: 50%;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+  
+<body>
+    <h1>Employer Interest Survey form</h1>
+  
+    <!-- Create Form -->
+    <form id="form">
+ 
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Enter your name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="name"
+                   placeholder="" />
+        </div>
+  
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Enter your department
+            </label>
+ 
+            <!-- Input Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="" />
+        </div>
+  
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Tell us about yourself
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="age"
+                   placeholder="" />
+        </div>
+  
+        
+  
+        <div class="form-control">
+            <label>
+                do you exercise at home?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">Yes</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">No</input>
+            </label>
+            
+        </div>
+  
+        <div class="form-control">
+            <label>How do you like to read about your favorite topic?
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">Books</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">Online resorces</input></label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp">Phone apps</input></label>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp">Magazines</input></label>
+            
+        </div>
+        <div class="form-control">
+            <label for="role" id="label-role">
+                What geners of movies do you like??
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="student">comedy</option>
+                <option value="intern">horror</option>
+                <option value="professional">
+                    drama
+                </option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+  
+        
+  
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+  
+</html>
